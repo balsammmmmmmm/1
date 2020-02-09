@@ -39,10 +39,11 @@ day_5 = (
 
 
 
-keyboard1 = telebot.types.ReplyKeyboardMarkup(True)
+keyboard1 = telebot.types.ReplyKeyboardMarkup(True,True)
 keyboard1.row(f"{day[0]}",f"{day[1]}",f"{day[2]}")
 keyboard1.row(f"{day[3]}",f"{day[4]}",f"{day[5]}")
-
+keyboard1.row("добавить инфо")
+qq = []
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
@@ -62,6 +63,9 @@ def send_text(message):
           bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_4[0]}\n\n{day_4[1]}\n\n{day_4[2]}n\n{day_4[3]}')
      elif message.text == f"{day[5]}":
           bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_5[0]}\n\n{day_5[1]}\n\n{day_5[2]}\n\n{day_5[3]}')
-
+     elif message.text == 'добавить инфо':
+          qq.append("lol")
+          bot.send_message(message.chat.id, "added")
+          
 if __name__ == '__main__':
      bot.infinity_polling()
