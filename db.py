@@ -39,19 +39,19 @@ def start_message(message):
 
 @bot.message_handler(content_types=['text'])
 def send_text(message):
-     if message.text.lower()== f"{bus[0]}":
-          bot.send_message(message.chat.id, f'{message.from_user.first_name}\nАвтобусы которые в имеются базе\n\nБортовой ном:{bus_code[0][0]}\nГосном:{bus_num[0][0]}\n\nБортовой ном:{bus_code[0][1]}\nГосном:{bus_num[0][1]}')
-     elif message.text.lower()== f"{bus[1]}":
-          bot.send_message(message.chat.id, f'{message.from_user.first_name}\nАвтобусы которые в имеются базе\n\nБортовой ном:{bus_code[1][0]}\nГосном:{bus_num[1][0]}')
-     elif message.text.lower()== f"{bus[2]}":
-          bot.send_message(message.chat.id, f'{message.from_user.first_name}\nАвтобусы которые в имеются базе\n\nБортовой ном:{bus_code[2][0]}\nГосном:{bus_num[2][0]}\n\nБортовой ном:{bus_code[2][1]}\nГосном:{bus_num[2][1]}\n\nБортовой ном:{bus_code[2][2]}\nГосном:{bus_num[2][2]}\n\nБортовой ном:{bus_code[2][3]}\nГосном:{bus_num[2][3]}\n\nБортовой ном:{bus_code[2][4]}\nГосном:{bus_num[2][4]}')
-     elif message.text.lower()== f"{bus[3]}":
+     if message.text.lower()== f"{bus[0]}":  #9 
+          bot.send_message(message.chat.id, f'{message.from_user.first_name}\nАвтобусы которые в имеются базе\n\nБортовой ном:{bus_code[0][0]}\nГосном:{bus_num[0][0]}\n\nБортовой ном:{bus_code[0][1]}\nГосном:{bus_num[0][1]}\n\nБортовой ном:{bus_code[0][2]}\nГосном:{bus_num[0][2]}\n\nБортовой ном:{bus_code[0][3]}\nГосном:{bus_num[0][3]}\n\nБортовой ном:{bus_code[0][4]}\nГосном:{bus_num[0][4]}')
+     elif message.text.lower()== f"{bus[1]}":     #46
+          bot.send_message(message.chat.id, f'{message.from_user.first_name}\nАвтобусы которые в имеются базе\n\nБортовой ном:{bus_code[1][0]}\nГосном:{bus_num[1][0]}\n\nБортовой ном:{bus_code[1][1]}\nГосном:{bus_num[1][1]}')
+     elif message.text.lower()== f"{bus[2]}":     #50
+          bot.send_message(message.chat.id, f'{message.from_user.first_name}\nАвтобусы которые в имеются базе\n\nБортовой ном:{bus_code[2][0]}\nГосном:{bus_num[2][0]}\n\nБортовой ном:{bus_code[2][1]}\nГосном:{bus_num[2][1]}\n\nБортовой ном:{bus_code[2][2]}\nГосном:{bus_num[2][2]}\n\nБортовой ном:{bus_code[2][3]}\nГосном:{bus_num[2][3]}\n\nБортовой ном:{bus_code[2][4]}\nГосном:{bus_num[2][4]}\n\nБортовой ном:{bus_code[2][5]}\nГосном:{bus_num[2][5]}\n\nБортовой ном:{bus_code[2][6]}\nГосном:{bus_num[2][6]}\n\nБортовой ном:{bus_code[2][7]}\nГосном:{bus_num[2][7]}')
+     elif message.text.lower()== f"{bus[3]}":     #53
           bot.send_message(message.chat.id, f'{message.from_user.first_name}\nАвтобусы которые в имеются базе\n\nБортовой ном:{bus_code[3][0]}\nГосном:{bus_num[3][0]}')
-     elif message.text.lower()== f"{bus[4]}":
-          bot.send_message(message.chat.id, f'{message.from_user.first_name}\nАвтобусы которые в имеются базе\n\nБортовой ном:{bus_code[4][0]}\nГосном:{bus_num[4][0]}\n\nБортовой ном:{bus_code[4][1]}\nГосном:{bus_num[4][1]}\n\nБортовой ном:{bus_code[4][2]}\nГосном:{bus_num[4][2]}\n\nБортовой ном:{bus_code[4][3]}\nГосном:{bus_num[4][3]}\n\nБортовой ном:{bus_code[4][4]}\nГосном:{bus_num[4][4]}\n\nБортовой ном:{bus_code[4][5]}\nГосном:{bus_num[4][5]}')
-     elif message.text.lower()== f"{bus[5]}":
-          bot.send_message(message.chat.id, f'{message.from_user.first_name}\nАвтобусы которые в имеются базе\n\nБортовой ном:{bus_code[5][0]}\nГосном:{bus_num[5][0]}\n\nБортовой ном:{bus_code[5][1]}\nГосном:{bus_num[5][1]}\n\nБортовой ном:{bus_code[5][2]}\nГосном:{bus_num[5][2]}\n\nБортовой ном:{bus_code[5][3]}\nГосном:{bus_num[5][3]}\n\nБортовой ном:{bus_code[5][4]}\nГосном:{bus_num[5][4]}')
-     elif message.text.lower()== f"{bus[6]}":
+     elif message.text.lower()== f"{bus[4]}":     #60 
+          bot.send_message(message.chat.id, f'{message.from_user.first_name}\nАвтобусы которые в имеются базе\n\nБортовой ном:{bus_code[4][0]}\nГосном:{bus_num[4][0]}\n\nБортовой ном:{bus_code[4][1]}\nГосном:{bus_num[4][1]}\n\nБортовой ном:{bus_code[4][2]}\nГосном:{bus_num[4][2]}\n\nБортовой ном:{bus_code[4][3]}\nГосном:{bus_num[4][3]}\n\nБортовой ном:{bus_code[4][4]}\nГосном:{bus_num[4][4]}\n\nБортовой ном:{bus_code[4][5]}\nГосном:{bus_num[4][5]}\n\nБортовой ном:{bus_code[4][6]}\nГосном:{bus_num[4][6]}')
+     elif message.text.lower()== f"{bus[5]}":     #73
+          bot.send_message(message.chat.id, f'{message.from_user.first_name}\nАвтобусы которые в имеются базе\n\nБортовой ном:{bus_code[5][0]}\nГосном:{bus_num[5][0]}\n\nБортовой ном:{bus_code[5][1]}\nГосном:{bus_num[5][1]}\n\nБортовой ном:{bus_code[5][2]}\nГосном:{bus_num[5][2]}\n\nБортовой ном:{bus_code[5][3]}\nГосном:{bus_num[5][3]}\n\nБортовой ном:{bus_code[5][4]}\nГосном:{bus_num[5][4]}\n\nБортовой ном:{bus_code[5][5]}\nГосном:{bus_num[5][5]}')
+     elif message.text.lower()== f"{bus[6]}":     #33
           bot.send_message(message.chat.id, f'{message.from_user.first_name}\nАвтобусы которые в имеются базе\n\nБортовой ном:{bus_code[6][0]}\nГосном:{bus_num[6][0]}')
 
 
