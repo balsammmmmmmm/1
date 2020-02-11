@@ -56,31 +56,31 @@ def send_text(message):
 
 def send_shedudle(message):
      if message.text == f"{day[0]}":
-          bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_0[0]}')
+          bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_0[0]}',reply_markup=keyboard1)
      elif message.text == f"{day[1]}":
-          bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_1[0]}')
+          bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_1[0]}',reply_markup=keyboard1)
      elif message.text == f"{day[2]}":
-          bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_2[0]}')
+          bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_2[0]}',reply_markup=keyboard1)
      elif message.text == f"{day[3]}":
-          bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_3[0]}')
+          bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_3[0]}',reply_markup=keyboard1)
      elif message.text == f"{day[4]}":
-          bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_4[0]}')
+          bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_4[0]}',reply_markup=keyboard1)
      elif message.text == f"{day[5]}":
-          bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_5[0]}')
+          bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_5[0]}',reply_markup=keyboard1)
 
 def send_shedudle2(message):
           if message.text == f"{day[0]}":
-               bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_0[1]}')
+               bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_0[1]}',reply_markup=keyboard1)
           elif message.text == f"{day[1]}":
-               bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_1[1]}')
+               bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_1[1]}',reply_markup=keyboard1)
           elif message.text == f"{day[2]}":
-               bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_2[1]}')
+               bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_2[1]}',reply_markup=keyboard1)
           elif message.text == f"{day[3]}":
-               bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_3[1]}')
+               bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_3[1]}',reply_markup=keyboard1)
           elif message.text == f"{day[4]}":
-               bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_4[1]}')
+               bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_4[1]}',reply_markup=keyboard1)
           elif message.text == f"{day[5]}":
-               bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_5[1]}')
+               bot.send_message(message.chat.id, f'Здраствуйте {message.from_user.first_name}\nСегодня:\n\n{day_5[1]}',reply_markup=keyboard1)
           
 if __name__ == '__main__':
      bot.infinity_polling()

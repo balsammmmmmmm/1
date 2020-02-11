@@ -22,13 +22,21 @@ bus_num = (
      ["272BO01","278BO01", "687BM01","587BM01","140BL01","855BL01","026AZ01"],  #73
      ["308BO01"]    #33
 )
-
+n1 = len(bus_code[0])
+n2 = len(bus_code[1])
+n3 = len(bus_code[2])
+n4 = len(bus_code[3])
+n5 = len(bus_code[4])
+n6 = len(bus_code[5])
+n7 = len(bus_code[6])
+x = (n1+n2+n3+n4+n5+n6+n7)
 
 @bot.message_handler(commands=['start'])
 def start_message(message):
          bot.send_message(message.chat.id, 'Отказ от ответственности: Здраствуйте, вы используете данную программу исключительно на свой страх и риск.')
 
 keyboard1 = telebot.types.ReplyKeyboardMarkup(True)
+keyboard1.row("Сколько автобусов в базе")
 keyboard1.row(f"{bus[0]}",f"{bus[1]}",f"{bus[2]}")
 keyboard1.row(f"{bus[3]}",f"{bus[4]}",f"{bus[5]}",f'{bus[6]}' )
 
@@ -53,7 +61,8 @@ def send_text(message):
           bot.send_message(message.chat.id, f'{message.from_user.first_name}\nАвтобусы которые в имеются базе\n\nБортовой ном:{bus_code[5][0]}\nГосном:{bus_num[5][0]}\n\nБортовой ном:{bus_code[5][1]}\nГосном:{bus_num[5][1]}\n\nБортовой ном:{bus_code[5][2]}\nГосном:{bus_num[5][2]}\n\nБортовой ном:{bus_code[5][3]}\nГосном:{bus_num[5][3]}\n\nБортовой ном:{bus_code[5][4]}\nГосном:{bus_num[5][4]}\n\nБортовой ном:{bus_code[5][5]}\nГосном:{bus_num[5][5]}\n\nБортовой ном:{bus_code[5][6]}\nГосном:{bus_num[5][6]}')
      elif message.text.lower()== f"{bus[6]}":     #33
           bot.send_message(message.chat.id, f'{message.from_user.first_name}\nАвтобусы которые в имеются базе\n\nБортовой ном:{bus_code[6][0]}\nГосном:{bus_num[6][0]}')
-
+     elif message.text == "Сколько автобусов в базе":
+          bot.send_message(message.chat.id, f'Общее количество {x}' )
 
 if __name__ == '__main__':
      bot.infinity_polling()
